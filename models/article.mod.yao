@@ -1,0 +1,67 @@
+{
+  "LANG": "1.0.0",
+  "VERSION": "1.0.0",
+  "name": "Article",
+  "table": { "name": "article", "comment": "Article" },
+  "columns": [
+    { "label": "ID", "name": "id", "type": "ID", "comment": "ID" },
+    {
+      "label": "User",
+      "name": "user_id",
+      "type": "bigInteger",
+      "comment": "Belong to User (user.id)"
+    },
+    {
+      "label": "Title",
+      "name": "title",
+      "type": "string",
+      "index": true,
+      "length": 200,
+      "nullable": true,
+      "comment": "Title"
+    },
+    {
+      "label": "Abstract",
+      "name": "abstract",
+      "type": "text",
+      "nullable": true,
+      "comment": "Abstract"
+    },
+    {
+      "label": "Author",
+      "name": "author",
+      "type": "string",
+      "index": true,
+      "length": 80,
+      "nullable": true,
+      "comment": "Author"
+    },
+    {
+      "label": "Published At",
+      "name": "published_at",
+      "type": "datetime",
+      "index": true,
+      "nullable": true,
+      "comment": "Published At"
+    },
+    {
+      "label": "Content",
+      "name": "content",
+      "type": "text",
+      "nullable": true,
+      "comment": "Content"
+    },
+    {
+      "label": "Status",
+      "name": "status",
+      "type": "enum",
+      "default": "Draft",
+      "option": ["Draft", "Published"],
+      "comment": "Status: Draft, Published",
+      "index": true
+    }
+  ],
+  "relations": {},
+  "option": { "timestamps": true },
+  "values": []
+}
