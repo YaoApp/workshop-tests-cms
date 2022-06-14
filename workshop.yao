@@ -1,6 +1,6 @@
 {
   "require": [
-    "github.com/yaoapp/workshop-tests-crm@v0.1.0",
+    "github.com/yaoapp/workshop-tests-crm@v0.2.0",
     { "repo": "github.com/yaoapp/workshop-tests-erp@v0.1.0", "indirect": true }
   ]
 }
