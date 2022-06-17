@@ -1,0 +1,15 @@
+{
+  "name": "PING",
+  "version": "1.0.0",
+  "description": "PING",
+  "guard": "-",
+  "paths": [
+    {
+      "path": "/ping",
+      "method": "GET",
+      "process": "models.user.Get",
+      "in": [":query"],
+      "out": { "status": 200, "type": "application/json" }
+    }
+  ]
+}

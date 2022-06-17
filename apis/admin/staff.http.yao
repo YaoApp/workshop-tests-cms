@@ -1,0 +1,15 @@
+{
+  "name": "STAFF",
+  "version": "1.0.0",
+  "description": "STAFF API",
+  "guard": "-",
+  "paths": [
+    {
+      "path": "/search",
+      "method": "GET",
+      "process": "models.admin.staff.Get",
+      "in": [":query"],
+      "out": { "status": 200, "type": "application/json" }
+    }
+  ]
+}

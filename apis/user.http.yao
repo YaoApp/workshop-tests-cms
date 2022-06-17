@@ -1,0 +1,15 @@
+{
+  "name": "USER",
+  "version": "1.0.0",
+  "description": "USER API",
+  "guard": "-",
+  "paths": [
+    {
+      "path": "/search",
+      "method": "GET",
+      "process": "models.user.Get",
+      "in": [":query"],
+      "out": { "status": 200, "type": "application/json" }
+    }
+  ]
+}
